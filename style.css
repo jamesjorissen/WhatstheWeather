@@ -1,3 +1,9 @@
+/* adding style to all styles using * tag */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .city {
   padding: 50%;
   background-color: lightblue;
@@ -6,4 +12,16 @@
   margin-left: 10%;
   width: 100%;
   height: auto;
+}
+
+/* entering CSS info for these tags */
+#cityWeather {
+  padding: 20px;
+  margin-top: 5%;
+  display: inline-block;
+}
+
+#projectedForecast {
+  padding: 5px;
+  margin-top: 10%;
 }
