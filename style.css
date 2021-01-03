@@ -5,7 +5,8 @@
 }
 
 .city1 {
-  padding: 50%;
+  padding: 2%;
+  margin-left: 1%;
   background-color: lightblue;
 }
 .wrapper {
@@ -18,10 +19,15 @@
 #cityWeather {
   padding: 20px;
   margin-top: 5%;
-  display: inline-block;
+  margin left: 10%;
 }
 
 #projectedForecast {
   padding: 5px;
   margin-top: 10%;
+  margin-left: 20%;
+}
+
+li {
+  border: 10px lightblue;
 }
