@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What's the Weather?</title>
 
     <!-- links to bootstrap, css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- setting up basic column and row structure -->
-        <div class="container">
-            <div class="row">
-                <div class="card-body">
-                    <header>
-                        <h1>What's the Weather?</h1>
-                    </header>
-                </div>
-                <div class="col-sm city1">
-                    <form>
-                        <div class="form-group">
-                            <label for="city-text">City Search: </label>
-                            <input type="text" class="form-control" id="city-text" aria-describedby="citySearch">
-                            <small id="citySearch" class="form-text text-muted">Enter the city who's weather you would like to view here:</small>
-                        </div>
-                        <div class="form-group">
-                            <button id="city-submit" type="submit">Submit</button>
-                        </div>
-                    </form>
-                    <ul class="list-group">
-                    </ul>
-                </div>    
-                <div class="col-sm">
-                    <div class="card">
-                        <div id="cityWeather">
-                            
-                        </div>
+    <div class="full-width">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <header>
+                    <h1>What's the Weather?</h1>
+                </header>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-4 col-md-2 city1">
+                <form>
+                    <div class="form-group">
+                        <label for="city-text">City Search: </label>
+                        <input type="text" class="form-control" id="city-text" aria-describedby="citySearch">
+                        <small id="citySearch" class="form-text text-muted">Enter the city who's weather you would like
+                            to view here: </small>
                     </div>
-                    <div class="card">
-                        <div id="projectedForecast">
+                    <div class="form-group">
+                        <button id="city-submit" type="submit">Submit</button>
+                    </div>
+                </form>
+                <ul class="list-group">
+                </ul>
+            </div>
+            <div class="col-sm-8 col-md-10">
+                <div class="info-wrapper">
+                    <div id="cityWeather">
 
-                        </div>
+                    </div>
+                
+                    <div id="projectedForecast">
+
                     </div>
                 </div>
             </div>
         </div>
-    
+    </div>
+
 
 
 </body>
@@ -55,4 +60,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="script.js"></script>
+
 </html>
