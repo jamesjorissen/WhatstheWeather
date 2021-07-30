@@ -16,13 +16,13 @@
 
 /* entering CSS info for these tags */
 #cityWeather {
-  padding: 20px;
+  padding: 12px;
   margin-top: 15%;
   display: inline-block;
 }
 
 #projectedForecast {
-  padding: 3px;
+  padding: 25px;
   margin-top: 10%;
 }
 
