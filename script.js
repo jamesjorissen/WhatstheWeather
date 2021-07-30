@@ -25,7 +25,7 @@ $("form").on("submit", function (e) {
     e.preventDefault();
     const city = $('#city-text').val();
     var APIKey = "bcef3a7ddc5c897b41eaebadadbfa1ac";
-    var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`;
+    var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`;
 
 
     $.ajax({
@@ -86,7 +86,7 @@ $(document).on("click", ".city1Li", function () {
     _dataStorage.attr("style", "border: 5px solid black");
 
     var APIKey = "bcef3a7ddc5c897b41eaebadadbfa1ac";
-    var url2 = `https://api.openweathermap.org/data/2.5/uvi/forecast?appid=${APIKey}&lat=${cityChosen[0].coord.lat}&lon=${cityChosen[0].coord.lon}&cnt=${1}`;
+    var url2 = `http://api.openweathermap.org/data/2.5/uvi/forecast?appid=${APIKey}&lat=${cityChosen[0].coord.lat}&lon=${cityChosen[0].coord.lon}&cnt=${1}`;
     $.ajax({
         url: url2,
         method: "GET"
@@ -101,7 +101,7 @@ $(document).on("click", ".city1Li", function () {
 
     var APIKey = "bcef3a7ddc5c897b41eaebadadbfa1ac";
 
-    var url3 = `https://api.openweathermap.org/data/2.5/onecall?lat=${cityChosen[0].coord.lat}&lon=${cityChosen[0].coord.lon}&exclude=current,minutely,hourly&units=imperial&appid=${APIKey}`;
+    var url3 = `http://api.openweathermap.org/data/2.5/onecall?lat=${cityChosen[0].coord.lat}&lon=${cityChosen[0].coord.lon}&exclude=current,minutely,hourly&units=imperial&appid=${APIKey}`;
 
     $.ajax({
         url: url3,
