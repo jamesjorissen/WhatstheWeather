@@ -25,7 +25,7 @@ $("form").on("submit", function (e) {
     e.preventDefault();
     const city = $('#city-text').val();
     var APIKey = "bcef3a7ddc5c897b41eaebadadbfa1ac";
-    var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`;
+    var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}`;
 
 
     $.ajax({
@@ -71,7 +71,7 @@ $(document).on("click", ".city1Li", function () {
     let currentDay = moment().format('MM/DD/YY')
     _cityData.text(cityChosen[0].name + "" + currentDay + " Today");
     const _icon = $("<img>");
-    _icon.attr("src", `http://openweathermap.org/img/w/${cityChosen[0].weather[0].icon}.png`);
+    _icon.attr("src", `https://openweathermap.org/img/w/${cityChosen[0].weather[0].icon}.png`);
     _dataStorage.append(_cityData);
     _dataStorage.append(_icon);
     const _dataTemperature = $("<p>");
@@ -116,7 +116,7 @@ $(document).on("click", ".city1Li", function () {
             forecastTitle.addClass("card-title");
             forecastTitle.text(`${moment(new Date(parseInt(response.daily[i].dt) * 1000)).format("MM/DD/YY")}`);
             const _image = $("<img>");
-            _image.attr("src", `http://openweathermap.org/img/w/${response.daily[i].weather[0].icon}.png`);
+            _image.attr("src", `https://openweathermap.org/img/w/${response.daily[i].weather[0].icon}.png`);
             const _temperature1 = $("<p>").text("Temperature: " + response.daily[i].temp.day);
             const _humidity1 = $("<p>").text("Humidity: " + response.daily[i].humidity + " %");
             const _wind1 = $("<p>").text("Wind Speed: " + response.daily[i].wind_speed);
